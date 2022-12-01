@@ -1,0 +1,22 @@
+plugins {
+    id 'groovy-gradle-plugin'
+}
+
+ext {
+    springBootVersion = '2.7.6'
+    springDependencyManagementVersion = '1.0.15.RELEASE'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.springframework.boot:spring-boot-gradle-plugin:$springBootVersion"
+    implementation "io.spring.gradle:dependency-management-plugin:$springDependencyManagementVersion"
+}

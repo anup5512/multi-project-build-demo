@@ -1,0 +1,11 @@
+plugins {
+    id 'orbit-java'
+}
+
+bootJar {
+    mainClass = 'com.example.demo.ApplicationTwo'
+}
+
+dependencies {
+    implementation project(':project-1')
+}
